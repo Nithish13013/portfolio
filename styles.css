@@ -1,3 +1,37 @@
+
+/* Snowfall canvas */
+#snow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* keeps snow behind everything */
+  pointer-events: none; /* so it doesn't block clicks */
+}
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #030044;
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+#loading h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  animation: blink 1.2s infinite;
+}
+
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -11,11 +45,14 @@ body {
   min-height: 100vh;
   font-family: "Cal Sans", sans-serif;
   color: white;
-    background: linear-gradient(to bottom, #ee82ff,#717171);
+    background: linear-gradient(to bottom, #2b2d34);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+    cursor: url("images/cursor.png"), auto;
+
+    
 }
 
 
@@ -105,7 +142,7 @@ body {
 }
 
 .btn.primary {
-  background:#6299a1;
+  background:#76c1f3;
   color: white;
 }
 
@@ -191,7 +228,7 @@ body {
 }
 
 .hero-text .highlight {
-  color: #006372;
+  color: #47adf1;
 }
 
 .hero-text p {
