@@ -24,7 +24,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #030044;
+  background: #d4de95;
   display: flex;  
   align-items: center;
   justify-content: center;
@@ -51,7 +51,7 @@ body {
   padding: 0;
   min-height: 100vh;
   color: white;
-  background: linear-gradient(to bottom, #0f4e5e);
+  background: linear-gradient(to bottom, #d4de95);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,7 +71,7 @@ cursor: url("images/cursor.png"), auto;
   margin: 20px auto;
   max-width: 1200px;
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.425);
   backdrop-filter: blur(16px);
   padding: 16px 32px;
   display: flex;
@@ -91,13 +91,14 @@ cursor: url("images/cursor.png"), auto;
   font-size: 1.3rem;
   font-family: "MyFont", sans-serif;
   font-style: normal;
+  color: #636b2f;
 }
 
 .menu-toggle {
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
-  color: white;
+  color: #636b2f;;
 }
 
 .nav-links {
@@ -108,14 +109,14 @@ cursor: url("images/cursor.png"), auto;
 }
 
 .nav-links li a {
-  color: white;
+  color: #636b2f;;
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s;
 }
 
 .nav-links li a:hover {
-  color: #63d5f8;
+  color: #ffffff;
 }
 
 .nav-buttons {
@@ -133,7 +134,7 @@ cursor: url("images/cursor.png"), auto;
 }
 
 .btn.primary {
-  background:#76c1f3;
+  background:#636b2f;;
   color: white;
 }
 
@@ -218,7 +219,7 @@ cursor: url("images/cursor.png"), auto;
 }
 
 .hero-text .highlight {
-  color: #47adf1;
+  color: #636b2f;
    font-size: 2.5rem;
    font-weight: 700;
 
@@ -226,7 +227,7 @@ cursor: url("images/cursor.png"), auto;
 
 .hero-text p {
   font-size: 1.1rem;
-  color: #f5f5f5;
+  color:#20201b;
   max-width: 500px;
   font-weight: 300; /* light for hero text */
 }
@@ -493,7 +494,7 @@ cursor: url("images/cursor.png"), auto;
   font-size: 2.4rem;
   margin-bottom: 48px;
   font-family: "MyFont", sans-serif;
-  color: white;
+  color: #636b2f;
   font-weight: 700;
 }
 
@@ -547,7 +548,7 @@ cursor: url("images/cursor.png"), auto;
 
 .skill-card p {
   font-size: 1rem;
-  color: #f5f5f5;
+  color: #3d4127;
   margin: 0;
 }
 
