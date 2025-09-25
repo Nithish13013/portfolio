@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nithish Loading</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -29,8 +31,9 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
+       
         <li><a href="#contact">Contact</a></li>
       </ul>
 
@@ -44,7 +47,8 @@
     <section class="hero" id="home">
       <div class="hero-content">
         <div class="hero-text">
-          <h1>I'm a <span class="highlight">Flutter Developer</span></h1>
+          <h1>Hello! I'm <span class="highlight">V.Nithish</h1>
+          <h1> A Flutter <span class="highlight">Developer</h1>
           <p>I build beautiful, high-performance mobile apps with Flutter and Dart. Let's create something amazing together!</p>
         </div>
         <div class="hero-image">
@@ -70,37 +74,56 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section class="projects-section" id="projects">
-      <h2 class="section-heading">My Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>Portfolio Website</h3>
-          <p>A fully responsive portfolio built with HTML, CSS, and JavaScript.</p>
-          <a href="#">View Project →</a>
-        </div>
-        <div class="project-card">
-          <h3>Flutter Chat App</h3>
-          <p>Real-time messaging app with Firebase Auth & Firestore integration.</p>
-          <a href="#">View Project →</a>
-        </div>
-      </div>
-    </section>
 
     <!-- SKILLS -->
     <section class="skills-section" id="skills">
       <h2 class="section-heading">My Skills</h2>
       <div class="skills-grid">
         <div class="skill-card">
-          <img src="assets/flutter.png" alt="Flutter Logo" />
+          <img src="images/flutter.png" alt="Flutter Logo" />
           <p>Flutter</p>
         </div>
         <div class="skill-card">
-          <img src="assets/dart.png" alt="Dart Logo" />
+          <img src="images/firebase.png" alt="Flutter Logo" />
+          <p>Firebase</p>
+        </div>
+        <div class="skill-card">
+          <img src="images/Dart_logo.png" alt="Dart Logo" />
           <p>Dart</p>
+        </div>
+        <div class="skill-card">
+          <img src="images/figma.png" alt="Dart Logo" />
+          <p>Figma</p>
+        </div>
+        <div class="skill-card">
+          <img src="images/postmanapi.png" alt="Dart Logo" />
+          <p>Postman Api</p>
         </div>
       </div>
     </section>
+    <!-- PROJECTS -->
+   <section class="projects-section" id="projects">
+  <h2 class="section-heading">My Projects</h2>
+  <div class="projects-grid">
+    
+    <div class="project-card">
+      <img src="images/nithquantum app ui.png" alt="Portfolio Website" class="project-img" />
+      <h3>NithQuantum Ai Assitant App UI </h3>
+      <p>An elegant AI-powered chat and voice assistant UI built entirely with Flutter</p>
+      <a href="viewproject.html">View Project →</a>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/flutter-chat.png" alt="Flutter Chat App" class="project-img" />
+      <h3>Flutter Chat App</h3>
+      <p>Real-time messaging app with Firebase Auth & Firestore integration.</p>
+      <a href="viewproject.html">View Project →</a>
+    </div>
+
+  </div>
+</section>
+
+
 
     <!-- CONTACT -->
     <section class="contact-section" id="contact">

@@ -1,6 +1,14 @@
+@font-face {
+  font-family: "MyFont"; /* You can give any name */
+  src: url("assets/fonts/Gilroy-Medium.ttf") format("truetype"); 
+  /* If you have woff/woff2, add more sources */
+}
 
-/* Snowfall canvas */
+
+
+
 #snow {
+  
   position: fixed;
   top: 0;
   left: 0;
@@ -9,6 +17,7 @@
   z-index: -1; /* keeps snow behind everything */
   pointer-events: none; /* so it doesn't block clicks */
 }
+
 #loading {
   position: fixed;
   top: 0;
@@ -29,35 +38,28 @@
   animation: blink 1.2s infinite;
 }
 
-
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
-
+font-family: "MyFont", sans-serif;
+  font-weight: 500; /* default everywhere */
 }
+
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  font-family: "Cal Sans", sans-serif;
   color: white;
-    background: linear-gradient(to bottom, #2b2d34);
+  background: linear-gradient(to bottom, #0f4e5e);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-    cursor: url("images/cursor.png"), auto;
-
-    
+   cursor: url('images/cursor.png'), auto;
 }
 
-
-
-
+cursor: url("images/cursor.png"), auto;
 
 .gradient-bg {
   min-height: 100vh;
@@ -87,11 +89,7 @@ body {
 
 .logo {
   font-size: 1.3rem;
-  font-weight: 600;
-  white-space: nowrap;
-   font-family: "Cal Sans", sans-serif;
- 
-  font-weight: 400;
+  font-family: "MyFont", sans-serif;
   font-style: normal;
 }
 
@@ -114,30 +112,23 @@ body {
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s;
-  
-  font-weight: 400;
-  font-style: normal;
 }
 
 .nav-links li a:hover {
-  color: #ffe4b5;
+  color: #63d5f8;
 }
 
 .nav-buttons {
   display: flex;
   gap: 12px;
-  
 }
 
 .btn {
   padding: 8px 18px;
   border-radius: 8px;
   text-decoration: none;
-  font-weight: 500;
   font-size: 0.95rem;
   transition: all 0.3s ease;
-
-  font-weight: 400;
   font-style: normal;
 }
 
@@ -152,8 +143,8 @@ body {
 
 .btn.secondary {
   border: 1px solid white;
-  background: transparent;
   color: white;
+  background: transparent;
 }
 
 .btn.secondary:hover {
@@ -196,6 +187,7 @@ body {
     display: none;
   }
 }
+
 .hero {
   padding: 60px 32px;
   max-width: 1200px;
@@ -211,9 +203,7 @@ body {
   justify-content: space-between;
   gap: 32px;
   flex-wrap: wrap;
-   
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 700; /* lighter in hero */
 }
 
 .hero-text {
@@ -223,21 +213,22 @@ body {
 
 .hero-text h1 {
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 700; /* bold only in hero heading */
   margin-bottom: 16px;
 }
 
 .hero-text .highlight {
   color: #47adf1;
+   font-size: 2.5rem;
+   font-weight: 700;
+
 }
 
 .hero-text p {
   font-size: 1.1rem;
   color: #f5f5f5;
   max-width: 500px;
-    
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 300; /* light for hero text */
 }
 
 .hero-image {
@@ -265,6 +256,7 @@ body {
     font-size: 2rem;
   }
 }
+
 .timeline-section {
   padding: 80px 16px;
   max-width: 1200px;
@@ -274,9 +266,9 @@ body {
 .timeline-heading {
   text-align: center;
   font-size: 2.2rem;
-  margin-bottom: 40px;
-  font-family: "Cal Sans", sans-serif;
+  font-family: "MyFont", sans-serif;
   color: white;
+  font-weight: 700;
 }
 
 .timeline {
@@ -377,6 +369,7 @@ body {
     margin-left: 20px;
   }
 }
+
 .projects-section {
   padding: 80px 16px;
   max-width: 1200px;
@@ -387,8 +380,9 @@ body {
 .section-heading {
   font-size: 2.4rem;
   margin-bottom: 48px;
-  font-family: "Cal Sans", sans-serif;
+  font-family: "MyFont", sans-serif;
   color: white;
+  font-weight: 700;
 }
 
 .projects-grid {
@@ -403,30 +397,41 @@ body {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
   border-radius: 16px;
-  padding: 24px;
+  padding: 20px;
   color: white;
   text-align: left;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
 }
 
 .project-card h3 {
   font-size: 1.4rem;
   margin-bottom: 12px;
-  color: #004577;
+  color: #76ebf3;
+  font-weight: 700;
 }
 
 .project-card p {
   font-size: 1rem;
   color: #e6e6e6;
   margin-bottom: 16px;
+  flex-grow: 1;
 }
 
 .project-card a {
   font-size: 0.95rem;
   text-decoration: none;
-  color: #48f0ff;
-  font-weight: 500;
+  color: #ffffff;
   transition: color 0.3s;
 }
 
@@ -438,6 +443,7 @@ body {
   transform: translateY(-6px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
 }
+
 .about-section {
   padding: 80px 16px;
   max-width: 1200px;
@@ -486,8 +492,9 @@ body {
   text-align: center;
   font-size: 2.4rem;
   margin-bottom: 48px;
-  font-family: "Cal Sans", sans-serif;
+  font-family: "MyFont", sans-serif;
   color: white;
+  font-weight: 700;
 }
 
 /* Mobile Responsive */
@@ -501,6 +508,7 @@ body {
     font-size: 1rem;
   }
 }
+
 .skills-section {
   padding: 80px 16px;
   max-width: 1200px;
@@ -541,7 +549,6 @@ body {
   font-size: 1rem;
   color: #f5f5f5;
   margin: 0;
-  font-weight: 500;
 }
 
 .skill-card:hover {
@@ -563,6 +570,7 @@ body {
     font-size: 0.95rem;
   }
 }
+
 .contact-section {
   padding: 80px 16px;
   max-width: 1200px;
@@ -598,7 +606,7 @@ body {
   border: none;
   border-radius: 8px;
   font-size: 1rem;
-  font-family: "Cal Sans", sans-serif;
+  font-family: "MyFont", sans-serif;
   background: rgba(255, 255, 255, 0.1);
   color: white;
 }
@@ -611,13 +619,11 @@ body {
 .contact-form button {
   padding: 12px;
   font-size: 1rem;
-  font-weight: 600;
-  background: #ee82ff;
-  color: white;
+  background: #76c1f3;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  
 }
 
 .contact-form button:hover {
