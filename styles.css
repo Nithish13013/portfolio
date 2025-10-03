@@ -56,7 +56,6 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-   cursor: url('images/cursor.png'), auto;
 }
 
 cursor: url("images/cursor.png"), auto;
@@ -218,7 +217,7 @@ cursor: url("images/cursor.png"), auto;
 }
 
 .hero-text .highlight {
-  color: #25aacb;
+  color: #47adf1;
    font-size: 2.5rem;
    font-weight: 700;
 
@@ -417,7 +416,7 @@ cursor: url("images/cursor.png"), auto;
 .project-card h3 {
   font-size: 1.4rem;
   margin-bottom: 12px;
-  color: #76ebf3;
+  color:  #9fd8fe;
   font-weight: 700;
 }
 
@@ -431,7 +430,7 @@ cursor: url("images/cursor.png"), auto;
 .project-card a {
   font-size: 0.95rem;
   text-decoration: none;
-  color: #ffffff;
+  color: #48f0ff;
   transition: color 0.3s;
 }
 
@@ -619,8 +618,8 @@ cursor: url("images/cursor.png"), auto;
 .contact-form button {
   padding: 12px;
   font-size: 1rem;
-  background: #76c1f3;
-  color: rgb(255, 255, 255);
+  background: #9fd8fe;
+  color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
