@@ -13,10 +13,6 @@
 
 <body>
   
-  <!-- Loading Screen -->
-  <div id="loading">
-    <h1>Nithish</h1>
-  </div>
   
   <!-- Snowfall Canvas -->
   <canvas id="snow"></canvas>
@@ -60,20 +56,16 @@
 
     <!-- ABOUT -->
     <section class="about-section" id="about">
-      <h2 class="section-heading">About Me</h2>
-      <div class="about-content">
-        <div class="about-text">
-          <p>
-            I'm Nithish — a passionate <strong>Flutter Developer</strong> with a strong background in UI/UX design and mobile app development.
-            I craft seamless, beautiful mobile experiences using <strong>Dart</strong> and <strong>Flutter</strong>.
-          </p>
-          <p>
-            When I’m not coding, I love exploring design trends, editing cinematic videos, and working on creative freelance projects.
-          </p>
-        </div>
-       
-      </div>
-    </section>
+  <h2 class="section-heading">About Me</h2>
+  <div class="about-content">
+    <div class="about-text">
+      <p>
+        I am Nithish, a final-year B.E. Computer Science and Engineering student at Nadar Saraswathi College of Engineering and Technology, Theni. I specialize in converting UI/UX designs into fully functional mobile applications using Flutter and Dart. I have experience building responsive and user-friendly apps, focusing on seamless design and smooth performance. Beyond coding, I enjoy exploring design trends and working on creative freelance projects. I am passionate about creating applications that combine functionality with elegant design.
+      </p>
+    </div>
+  </div>
+</section>
+
 
 
     <!-- SKILLS -->
@@ -126,32 +118,43 @@
 
 
 
-    <!-- CONTACT -->
-    <section class="contact-section" id="contact">
-      <h2 class="section-heading">Contact Me</h2>
-      <div class="contact-container">
-        <form class="contact-form">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-    </section>
+ <!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <h2 class="section-heading">Contact Me</h2>
+  <div class="contact-container">
+    
+    <!-- Contact Form -->
+    <form id="contact-form" class="contact-form">
+      <input type="text" name="from_name" placeholder="Your Name" required />
+      <input type="email" name="reply_to" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    
   </div>
+</section>
+
+<!-- EmailJS Script -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  // Initialize EmailJS
+  emailjs.init("OHJ9U-PnAmkfDJclX"); // Replace with your EmailJS User ID
+
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm("service_jlye10g", "template_rog2cjf", this)
+      .then(() => alert("Message sent successfully!"))
+      .catch((err) => alert("Failed to send message: " + JSON.stringify(err)));
+  });
+</script>
+
 
   <!-- JS for Navbar + Snow -->
   
   <script>
-    // Loading screen hide after 2s
-    window.addEventListener("load", () => {
-      const loader = document.getElementById("loading");
-      setTimeout(() => {
-        loader.style.opacity = "0";
-        loader.style.transition = "opacity 1s ease";
-        setTimeout(() => loader.style.display = "none", 1000);
-      }, 2000);
-    });
+
 
     // Snowfall Effect
     const canvas = document.getElementById("snow");

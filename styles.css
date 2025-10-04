@@ -18,25 +18,6 @@
   pointer-events: none; /* so it doesn't block clicks */
 }
 
-#loading {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #030044;
-  display: flex;  
-  align-items: center;
-  justify-content: center;
-  z-index: 10000;
-}
-
-#loading h1 {
-  font-size: 4rem;
-  font-weight: 700;
-  letter-spacing: 4px;
-  animation: blink 1.2s infinite;
-}
 
 * {
   margin: 0;
@@ -471,7 +452,7 @@ cursor: url("images/cursor.png"), auto;
 }
 
 .about-text strong {
-  color: #00346f;
+  color: #65adff;
 }
 
 .about-image {
@@ -575,6 +556,7 @@ cursor: url("images/cursor.png"), auto;
   max-width: 1200px;
   margin: auto;
   text-align: center;
+  color: white;
 }
 
 .contact-container {
@@ -623,6 +605,7 @@ cursor: url("images/cursor.png"), auto;
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .contact-form button:hover {
