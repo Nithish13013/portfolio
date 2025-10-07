@@ -1,10 +1,9 @@
 /* General Page Styling */
 body {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   background: #f4f6f8;
-  font-weight: 100;
   color: #333;
 }
 
@@ -38,6 +37,7 @@ body {
   box-shadow: 0 6px 16px rgba(0,0,0,0.08);
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 40px;
 }
 
 .project-card:hover {
@@ -48,20 +48,18 @@ body {
 /* Video Styling */
 .project-video {
   width: 100%;
-  height: auto;
   border-radius: 10px;
   margin-bottom: 15px;
   outline: none;
 }
 
-/* Project Title */
+/* Project Titles & Descriptions */
 .project-card h3 {
   font-size: 1.5rem;
   margin: 10px 0;
   color: #111;
 }
 
-/* Project Description */
 .project-card p {
   font-size: 0.95rem;
   color: #555;
@@ -83,4 +81,58 @@ body {
 
 .project-card a:hover {
   background: #444;
+}
+
+/* ===== Web App Project Sliders ===== */
+.slider-container {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+.slider-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.slider-btn {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.slider-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.web-project-info {
+  margin-top: 20px;
+  text-align: center;
 }

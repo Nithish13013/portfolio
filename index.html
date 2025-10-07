@@ -5,19 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nithish Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
-
 <body>
-  
-  
-  <!-- Snowfall Canvas -->
-  <canvas id="snow"></canvas>
 
   <div class="gradient-bg">
+    <!-- NAVBAR -->
     <div class="navbar">
       <div class="nav-left">
         <div class="logo">Nithish.dev</div>
@@ -27,9 +23,9 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-         <li><a href="#skills">Skills</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-       
+        <li><a href="#webprojects">Web App Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
 
@@ -43,30 +39,31 @@
     <section class="hero" id="home">
       <div class="hero-content">
         <div class="hero-text">
-          <h1>Hello! I'm V.Nithish</h1>
-          
-          <h1> A Flutter Developer</h1>
-          <p>I build beautiful, high-performance mobile apps with Flutter and Dart. Let's create something amazing together!</p>
+          <h1>Hello! I'm V. Nithish</h1>
+          <h1>A Flutter & Web Developer</h1>
+          <p>I design and develop modern, high-performance mobile and web applications using Flutter, Dart, and web technologies. Let’s build something beautiful and functional together!</p>
         </div>
         <div class="hero-image">
-          <img src="images/nit.png" alt="Flutter Developer Photo"  width="300px"/>
+          <img src="images/nit.png" alt="Developer Photo" width="300px"/>
         </div>
       </div>
     </section>
 
     <!-- ABOUT -->
     <section class="about-section" id="about">
-  <h2 class="section-heading">About Me</h2>
-  <div class="about-content">
-    <div class="about-text">
-      <p>
-        I am Nithish, a final-year B.E. Computer Science and Engineering student at Nadar Saraswathi College of Engineering and Technology, Theni. I specialize in converting UI/UX designs into fully functional mobile applications using Flutter and Dart. I have experience building responsive and user-friendly apps, focusing on seamless design and smooth performance. Beyond coding, I enjoy exploring design trends and working on creative freelance projects. I am passionate about creating applications that combine functionality with elegant design.
-      </p>
-    </div>
-  </div>
-</section>
-
-
+      <h2 class="section-heading">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I am Nithish, a final-year B.E. Computer Science and Engineering student at Nadar Saraswathi College of Engineering and Technology, Theni. 
+            I’m a passionate <strong>Flutter and Web Developer</strong> with a strong eye for clean design and seamless user experience. 
+            I specialize in transforming UI/UX designs into responsive and functional applications using Flutter, Dart, HTML, CSS, and JavaScript. 
+            I also work with Firebase for authentication and backend integration. 
+            Outside of coding, I enjoy working on creative design projects and exploring new front-end technologies to enhance user engagement.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- SKILLS -->
     <section class="skills-section" id="skills">
@@ -77,7 +74,7 @@
           <p>Flutter</p>
         </div>
         <div class="skill-card">
-          <img src="images/firebase.png" alt="Flutter Logo" />
+          <img src="images/firebase.png" alt="Firebase Logo" />
           <p>Firebase</p>
         </div>
         <div class="skill-card">
@@ -85,128 +82,96 @@
           <p>Dart</p>
         </div>
         <div class="skill-card">
-          <img src="images/figma.png" alt="Dart Logo" />
-          <p>Figma</p>
+          <img src="images/htmlori.png" alt="HTML Logo" />
+          <p>HTML</p>
         </div>
         <div class="skill-card">
-          <img src="images/postmanapi.png" alt="Dart Logo" />
-          <p>Postman Api</p>
+          <img src="images/css.png" alt="CSS Logo" />
+          <p>CSS</p>
         </div>
+        <div class="skill-card">
+          <img src="images/js.png" alt="JavaScript Logo" />
+          <p>JavaScript</p>
+        </div>
+        <div class="skill-card">
+          <img src="images/figma.png" alt="Figma Logo" />
+          <p>Figma</p>
+        </div>
+       
       </div>
     </section>
-    <!-- PROJECTS -->
-   <section class="projects-section" id="projects">
-  <h2 class="section-heading">My Projects</h2>
-  <div class="projects-grid">
-    
-    <div class="project-card">
-      <img src="images/nithquantum app ui.png" alt="Portfolio Website" class="project-img" />
-      <h3>NithQuantum Ai Assitant App UI </h3>
-      <p>An elegant AI-powered chat and voice assistant UI built entirely with Flutter</p>
-      <a href="viewproject.html">View Project →</a>
-    </div>
 
-    <div class="project-card">
-      <img src="images/lyrify.png" alt="Flutter Chat App" class="project-img" />
-      <h3>Lyrify App</h3>
-      <p>Lyrify lets you play, organize, and search songs with a simple Home, Playlist, and Player experience.</p>
-      <a href="viewproject.html">View Project →</a>
-    </div>
+    <!-- FLUTTER PROJECTS -->
+    <section class="projects-section" id="projects">
+      <h2 class="section-heading"> Flutter Projects</h2>
+      <div class="projects-grid">
 
-  </div>
-</section>
+        <div class="project-card">
+          <img src="images/nithquantum app ui.png" alt="NithQuantum Project" class="project-img" />
+          <h3>NithQuantum AI Assistant App UI</h3>
+          <p>An elegant AI-powered chat and voice assistant UI built entirely with Flutter.</p>
+          <a href="viewproject.html">View Project →</a>
+        </div>
 
+        <div class="project-card">
+          <img src="images/lyrify.png" alt="Lyrify Project" class="project-img" />
+          <h3>Lyrify App</h3>
+          <p>A simple yet beautiful music player app built using Flutter, featuring Home, Playlist, and Player screens.</p>
+          <a href="viewproject.html">View Project →</a>
+        </div>
 
+      </div>
+    </section>
 
- <!-- CONTACT -->
-<section class="contact-section" id="contact">
-  <h2 class="section-heading">Contact Me</h2>
-  <div class="contact-container">
-    
-    <!-- Contact Form -->
-    <form id="contact-form" class="contact-form">
-      <input type="text" name="from_name" placeholder="Your Name" required />
-      <input type="email" name="reply_to" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    
-  </div>
-</section>
+    <!-- WEB APP PROJECTS -->
+    <section class="projects-section" id="webprojects">
+      <h2 class="section-heading">Web App Projects</h2>
+      <div class="projects-grid">
 
-<!-- EmailJS Script -->
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script>
-  // Initialize EmailJS
-  emailjs.init("OHJ9U-PnAmkfDJclX"); // Replace with your EmailJS User ID
+        <div class="project-card">
+          <img src="images/login front.png" alt="Job Portal Project" class="project-img" />
+          <h3>Job Searching portal</h3>
+          <p>A modern job search platform built with HTML, CSS, and JavaScript, allowing users to browse and filter job listings easily.</p>
+          <a href="viewproject.html">View Project →</a>
+        </div>
 
-  document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();
+        <div class="project-card">
+          <img src="images/port hero.PNG" alt="Doctor Consultation Project" class="project-img" />
+          <h3>Personal portfolio</h3>
+          <p>A clean, responsive portfolio built with HTML, CSS, and JavaScript showcasing projects, case studies, and contact info</p>
+          <a href="viewproject.html">View Project →</a>
+        </div>
 
-    emailjs.sendForm("service_jlye10g", "template_rog2cjf", this)
-      .then(() => alert("Message sent successfully!"))
-      .catch((err) => alert("Failed to send message: " + JSON.stringify(err)));
-  });
-</script>
+      </div>
+    </section>
 
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+      <h2 class="section-heading">Contact Me</h2>
+      <div class="contact-container">
+        <form id="contact-form" class="contact-form">
+          <input type="text" name="from_name" placeholder="Your Name" required />
+          <input type="email" name="reply_to" placeholder="Your Email" required />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
 
-  <!-- JS for Navbar + Snow -->
-  
-  <script>
+    <!-- EmailJS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      emailjs.init("OHJ9U-PnAmkfDJclX"); // Replace with your EmailJS User ID
 
+      document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault();
 
-    // Snowfall Effect
-    const canvas = document.getElementById("snow");
-    const ctx = canvas.getContext("2d");
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-
-    let particles = [];
-    class Snowflake {
-      constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
-        this.radius = Math.random() * 2 + 1;
-        this.speedY = Math.random() * 1 + 0.5;
-        this.speedX = (Math.random() - 0.5) * 0.5;
-      }
-      update() {
-        this.y += this.speedY;
-        this.x += this.speedX;
-        if (this.y > canvas.height) {
-          this.y = -2;
-          this.x = Math.random() * canvas.width;
-        }
-      }
-      draw() {
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-        ctx.fillStyle = "white";
-        ctx.fill();
-      }
-    }
-    function init() {
-      particles = [];
-      for (let i = 0; i < 30; i++) {
-        particles.push(new Snowflake());
-      }
-    }
-    function animate() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      particles.forEach(flake => {
-        flake.update();
-        flake.draw();
+        emailjs.sendForm("service_jlye10g", "template_rog2cjf", this)
+          .then(() => alert("Message sent successfully!"))
+          .catch((err) => alert("Failed to send message: " + JSON.stringify(err)));
       });
-      requestAnimationFrame(animate);
-    }
-    init();
-    animate();
-    window.addEventListener("resize", () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-      init();
-    });
-  </script>
+    </script>
+
+  </div>
 </body>
 </html>

@@ -8,29 +8,26 @@
 </head>
 <body>
   
+  <!-- Flutter Projects -->
   <section class="projects-section" id="projects">
     <h2 class="section-heading">My Projects</h2>
     <div class="projects-grid">
       
       <div class="project-card">
-        <!-- Project video -->
         <video class="project-video" controls>
           <source src="assets/videos/NithQuantum.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
-
-        <h3>NithQuantum Ai Assitant App UI </h3>
-        <p>An elegant AI-powered chat and voice assistant UI built entirely with Flutter</p>
+        <h3>NithQuantum AI Assistant App UI</h3>
+        <p>An elegant AI-powered chat and voice assistant UI built entirely with Flutter.</p>
         <a href="https://github.com/Nithish13013/NithQuantum-App-Flutter-UI" target="_blank">GitHub Repo →</a>
       </div>
 
       <div class="project-card">
-        <!-- Project video -->
         <video class="project-video" controls>
           <source src="assets/videos/lyrify.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
-
         <h3>Lyrify App</h3>
         <p>Lyrify lets you play, organize, and search songs with a simple Home, Playlist, and Player experience.</p>
         <a href="https://github.com/Nithish13013/Lyrify-Music-App" target="_blank">GitHub Repo →</a>
@@ -39,5 +36,67 @@
     </div>
   </section>
 
+
+  <!-- Web App Projects -->
+  <section class="projects-section" id="web-projects">
+    <h2 class="section-heading">Web App Projects</h2>
+
+    <!-- Project 1 Slider -->
+    <div class="project-card">
+      <div class="slider-container">
+        <div class="slides" id="slider1">
+          <div class="slide"><img src="images/login.PNG" alt="Web App 1 Screenshot 1"></div>
+          <div class="slide"><img src="images/searchingpage.PNG" alt="Web App 1 Screenshot 2"></div>
+          <div class="slide"><img src="images/searchportal page role.PNG" alt="Web App 1 Screenshot 3"></div>
+          <div class="slide"><img src="images/resultspage.PNG" alt="Web App 1 Screenshot 3"></div>
+        </div>
+        <div class="slider-buttons">
+          <button class="slider-btn prev" onclick="moveSlide('slider1', -1)">&#10094;</button>
+          <button class="slider-btn next" onclick="moveSlide('slider1', 1)">&#10095;</button>
+        </div>
+      </div>
+      <div class="web-project-info">
+        <h3>Job Search Portal</h3>
+        <p>A responsive web application for job listings and applications, built with HTML, CSS, and Firebase.</p>
+        <a href="https://github.com/Nithish13013/job-search-website" target="_blank">GitHub Repo →</a>
+      </div>
+    </div>
+
+    <!-- Project 2 Slider -->
+    <div class="project-card">
+      <div class="slider-container">
+        <div class="slides" id="slider2">
+          <div class="slide"><img src="images/portfirst.PNG" alt="Web App 2 Screenshot 1"></div>
+          <div class="slide"><img src="images/portsecond.PNG" alt="Web App 2 Screenshot 2"></div>
+          <div class="slide"><img src="images/portthird.PNG" alt="Web App 2 Screenshot 3"></div>
+          <div class="slide"><img src="images/portfourth.PNG" alt="Web App 2 Screenshot 3"></div>
+          <div class="slide"><img src="images/portfifth.PNG" alt="Web App 2 Screenshot 3"></div>
+        </div>
+        <div class="slider-buttons">
+          <button class="slider-btn prev" onclick="moveSlide('slider2', -1)">&#10094;</button>
+          <button class="slider-btn next" onclick="moveSlide('slider2', 1)">&#10095;</button>
+        </div>
+      </div>
+      <div class="web-project-info">
+        <h3>Personal portfolio</h3>
+        <p>A clean, responsive portfolio built with HTML, CSS, and JavaScript showcasing projects, case studies, and contact info</p>
+        <a href="https://github.com/Nithish13013/portfolio" target="_blank">GitHub Repo →</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Simple slider functionality
+    function moveSlide(sliderId, direction) {
+      const slider = document.getElementById(sliderId);
+      const totalSlides = slider.children.length;
+      let index = parseInt(slider.getAttribute("data-index")) || 0;
+      index += direction;
+      if (index < 0) index = totalSlides - 1;
+      if (index >= totalSlides) index = 0;
+      slider.style.transform = `translateX(-${index * 100}%)`;
+      slider.setAttribute("data-index", index);
+    }
+  </script>
 </body>
 </html>

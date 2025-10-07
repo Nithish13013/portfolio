@@ -32,14 +32,15 @@ body {
   padding: 0;
   min-height: 100vh;
   color: white;
-  background: linear-gradient(to bottom, #0f4e5e);
+  background: linear-gradient(to bottom,#4e0102);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  
+cursor: url("images/cursor.png"), auto;
 }
 
-cursor: url("images/cursor.png"), auto;
 
 .gradient-bg {
   min-height: 100vh;
@@ -117,7 +118,7 @@ cursor: url("images/cursor.png"), auto;
   color: white;
 }
 
-.btn.primary:hover {
+.btn.primary:hover {  
   background: #046074;
 }
 
@@ -195,10 +196,11 @@ cursor: url("images/cursor.png"), auto;
   font-size: 2.5rem;
   font-weight: 700; /* bold only in hero heading */
   margin-bottom: 16px;
+  
 }
 
 .hero-text .highlight {
-  color: #47adf1;
+  color: #a2daff;
    font-size: 2.5rem;
    font-weight: 700;
 
@@ -206,7 +208,7 @@ cursor: url("images/cursor.png"), auto;
 
 .hero-text p {
   font-size: 1.1rem;
-  color: #f5f5f5;
+  color: #ffffff;
   max-width: 500px;
   font-weight: 300; /* light for hero text */
 }
@@ -397,7 +399,7 @@ cursor: url("images/cursor.png"), auto;
 .project-card h3 {
   font-size: 1.4rem;
   margin-bottom: 12px;
-  color:  #9fd8fe;
+  color:  #fbf1bf;
   font-weight: 700;
 }
 
@@ -411,7 +413,7 @@ cursor: url("images/cursor.png"), auto;
 .project-card a {
   font-size: 0.95rem;
   text-decoration: none;
-  color: #48f0ff;
+  color: #fbf1bf;
   transition: color 0.3s;
 }
 
@@ -452,7 +454,7 @@ cursor: url("images/cursor.png"), auto;
 }
 
 .about-text strong {
-  color: #65adff;
+  color: #fae57e;
 }
 
 .about-image {
@@ -600,7 +602,7 @@ cursor: url("images/cursor.png"), auto;
 .contact-form button {
   padding: 12px;
   font-size: 1rem;
-  background: #9fd8fe;
+  background: #f7dc56;
   color: white;
   border: none;
   border-radius: 8px;
@@ -609,7 +611,7 @@ cursor: url("images/cursor.png"), auto;
 }
 
 .contact-form button:hover {
-  background: #046074;
+  background: #3a3701;
 }
 
 .contact-info {
